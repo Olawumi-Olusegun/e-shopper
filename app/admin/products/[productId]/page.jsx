@@ -18,11 +18,11 @@ const getProduct = async (params) => {
     }
 }
 
-const HomePage =  ({ params }) => {
+const ProductPage =  ({ params }) => {
     // const products = await getProducts()
     const data = use(getProduct(params.productId))
 
     return <UpdateProduct data={data?.product} />
 }
 
-export default HomePage
+export default ProductPage

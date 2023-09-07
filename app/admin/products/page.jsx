@@ -26,11 +26,11 @@ const getProducts = async (searchParams) => {
     }
 }
 
-const HomePage =  ({ searchParams }) => {
+const ProductsPage =  ({ searchParams }) => {
     // const products = await getProducts()
     const data = use(getProducts(searchParams))
 
     return <Products data={data} />
 }
 
-export default HomePage
+export default ProductsPage
