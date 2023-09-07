@@ -83,7 +83,7 @@ const Products = ({ data }) => {
         </table>
 
         <div className="mb-6">
-          <CustomPagination resPerPage={data?.resPerPage} productsCount={data.filteredProductsCount} />
+          <CustomPagination resPerPage={data?.resPerPage} productsCount={data?.filteredProductsCount} />
         </div>
 
       </div>

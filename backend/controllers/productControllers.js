@@ -7,8 +7,6 @@ import { cloudinary, uploads } from '../utils/cloudinary';
 export const newProduct = async (req, res, next) => {
 
     req.body.user = req?.user?._id;
-
-    console.log(req.body)
     
     const { name, user, description, price, images, category, seller, stock, ratings, reviews } = req.body
     
@@ -44,7 +42,7 @@ export const listProducts = async (req, res, next) => {
         
         if(!products) return res.status(404).json({ message: 'Products not found' })
         
-        const filteredProductsCount = products.length;
+        const filteredProductsCount = products?.length;
 
         apiFilters.pagination(itemsPerPage);
       
