@@ -18,9 +18,9 @@ const getProducts = async (searchParams) => {
         return data
 
     } catch(error) {
-        if(Number(error.response.status) === 500 && error.response.statusText === 'Internal Server Error' ) {
-            // console.log(error.response.statusText)
-        }
+        // if(Number(error?.response?.status) === 500 && error.response.statusText === 'Internal Server Error' ) {
+        //     // console.log(error.response.statusText)
+        // }
 
         // console.log(error)
     }

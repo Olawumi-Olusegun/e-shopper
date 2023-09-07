@@ -10,10 +10,10 @@ const getProduct = async (params) => {
         return data
 
     } catch(error) {
-        if(Number(error.response.status) === 500 && error.response.statusText === 'Internal Server Error' ) {
-            // console.log(error)
+        // if(Number(error.response.status) === 500 && error.response.statusText === 'Internal Server Error' ) {
+        //     // console.log(error)
 
-        }
+        // }
 
     }
 }
