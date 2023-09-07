@@ -1,6 +1,5 @@
 // "use client"
 import React from 'react'
-import Profile from '@/components/auth/Profile';
 import { cookies } from 'next/headers';
 import ListOrders from '@/components/orders/listOrders';
 import queryString from 'query-string';
